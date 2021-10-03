@@ -9,7 +9,7 @@ from botocore.exceptions import ClientError
 
 def lambda_handler(event, context):
        rating=random.randint(0, 11)
-       text='You are such a bad guy.'
+       text='You are such a bad guy.Vijay.'
        body=json.loads(event['body'])
        text=body['text']
        text=text.replace(',','').replace('.','').replace('!','')
